@@ -1,0 +1,87 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100%;
+    color: #fff;
+}
+
+/* Hero Section with background image */
+.hero {
+    background-image: url('https://images.unsplash.com/photo-1523528283115-9bf9c9c17d5e?auto=format&fit=crop&w=1600&q=80');
+    
+
+
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Content box */
+.content {
+    background-color: rgba(0, 0, 0, 0.6); /* Slight dark overlay */
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 100%;
+}
+
+/* Typography */
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.description {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.datetime, .venue {
+    display: block;
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+
+/* RSVP Button */
+.rsvp-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #ff6b81;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.rsvp-button:hover {
+    background-color: #ff4757;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+
+    .content {
+        padding: 25px;
+    }
+}
